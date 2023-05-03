@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{537E269E-DB78-4AF0-AB64-30A05BDD697E}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="RPPixelPainter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="RPPPComponents\RPPPComponents.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="RPPixelPainter">
+			<MSBuild Projects="RPPixelPainter.dproj"/>
+		</Target>
+		<Target Name="RPPixelPainter:Clean">
+			<MSBuild Targets="Clean" Projects="RPPixelPainter.dproj"/>
+		</Target>
+		<Target Name="RPPixelPainter:Make">
+			<MSBuild Targets="Make" Projects="RPPixelPainter.dproj"/>
+		</Target>
+		<Target Name="RPPPComponents">
+			<MSBuild Projects="RPPPComponents\RPPPComponents.dproj"/>
+		</Target>
+		<Target Name="RPPPComponents:Clean">
+			<MSBuild Targets="Clean" Projects="RPPPComponents\RPPPComponents.dproj"/>
+		</Target>
+		<Target Name="RPPPComponents:Make">
+			<MSBuild Targets="Make" Projects="RPPPComponents\RPPPComponents.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="RPPixelPainter;RPPPComponents"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="RPPixelPainter:Clean;RPPPComponents:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="RPPixelPainter:Make;RPPPComponents:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023.05.03 14:48:53.828.pas,E:\Documents\RAD Studio\Projects\Unit1.pas=E:\PROGRAMS\RPPixelPainter\UMain.pas</Transaction>
+    <Transaction>2023.05.03 14:48:53.828.dfm,E:\Documents\RAD Studio\Projects\Unit1.dfm=E:\PROGRAMS\RPPixelPainter\UMain.dfm</Transaction>
+    <Transaction>2023.05.03 14:49:02.232.dproj,E:\Documents\RAD Studio\Projects\Project1.dproj=E:\PROGRAMS\RPPixelPainter\RPPixelPainter.dproj</Transaction>
+    <Transaction>2023.05.03 15:34:17.602.pas,E:\PROGRAMS\RPPixelPainter\Unit2.pas=E:\PROGRAMS\RPPixelPainter\UPaintBox.pas</Transaction>
+    <Transaction>2023.05.03 15:34:17.602.dfm,E:\PROGRAMS\RPPixelPainter\Unit2.dfm=E:\PROGRAMS\RPPixelPainter\UPaintBox.dfm</Transaction>
+    <Transaction>2023.05.03 16:41:53.496.pas,E:\PROGRAMS\RPPixelPainter\UPaintBox.pas=E:\PROGRAMS\RPPixelPainter\UPaintForm.pas</Transaction>
+    <Transaction>2023.05.03 16:41:53.496.dfm,E:\PROGRAMS\RPPixelPainter\UPaintBox.dfm=E:\PROGRAMS\RPPixelPainter\UPaintForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
